@@ -36,11 +36,25 @@
       .swiper-pagination-bullet {
         background-color: #23b9eb;
       }
-      @media (max-width: 555px) {
-      .about-content {
-        display: none !important; /* Hide the div when the width is 555px or less */
-      }
-    }
+      
+       @media (max-width: 555px) {
+             .about-content {
+             display: none !important; /* Hide the div when the width is 555px or less */
+          }
+       }
+       @media (max-width: 498px) and (max-height: 608px) {
+        #resume-download {
+          text-align: center;
+        }
+        
+          #resume-download a {
+            position: static;
+            display: inline-block;
+            left: 0;
+            margin: 0 auto;
+            transform: translateX(0);
+          }
+        }
     </style>
     <script src="./matter.js" defer></script>
   </head>
@@ -179,16 +193,14 @@
               <p>"I am Hasham, an ambitious and dedicated software engineer with a robust foundation in computer science concepts and prgramming languages. As a highly motivated graduate of FAST NUCES, I have demonstrated my ability to quickly learn new technologies. I am eager to apply my knowledge and contribute to innovative projects while continuing to grow in IT industry."
               </p>
             </div>
-            <div style="text-align: center; margin-top: 20px; position: relative;">
+           <div id="resume-download" style="text-align: center; margin-top: 20px; position: relative;">
               <a href="./assets/CV_MuhammadHasham.pdf" download="CV_MuhammadHasham" 
-                 style="display: inline-block; padding: 12px 24px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-size: 18px; font-weight: bold; transition: transform 0.3s ease, background-color 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); position: relative; left: -110px;"
-                 onmouseover="this.style.backgroundColor='#0056b3'; this.style.transform='scale(1.1)'; this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.2)';" 
-                 onmouseout="this.style.backgroundColor='#007bff'; this.style.transform='scale(1)'; this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)';">
-                Download Resume
+              style="display: inline-block; padding: 12px 24px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-size: 18px; font-weight: bold; transition: transform 0.3s ease, background-color 0.3s ease; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); position: relative; left: -110px;"
+               onmouseover="this.style.backgroundColor='#0056b3'; this.style.transform='scale(1.1)'; this.style.boxShadow='0 6px 12px rgba(0, 0, 0, 0.2)';" 
+               onmouseout="this.style.backgroundColor='#007bff'; this.style.transform='scale(1)'; this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)';">
+               Download Resume
               </a>
-            </div>
-            
-            
+            </div>            
           </div>
           </div>
         </div>
